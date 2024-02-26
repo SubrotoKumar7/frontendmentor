@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "Inter";
+    src: url(./assets/fonts/static/Inter-Regular.ttf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: "Inter";
+    src: url(./assets/fonts/static/Inter-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face{
+    font-family: "Inter";
+    src: url(./assets/fonts/static/Inter-Bold.ttf);
+    font-weight: 700;
+}
+:root{
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+    --grey: hsl(0, 0%, 20%);
+    --white: hsl(0, 0%, 100%);
+    --green: hsl(75, 94%, 57%);
+    --font-size: 14;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: hsl(0, 0%, 8%);
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+.card{
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--dark-grey);
+    text-align: center;
+}
+.card-img{
+    width: 100%;
+}
+.card-img img{
+    width: 100px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+.card-text h2{
+    color: var(--white);
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+.card-text h4{
+    color: var(--green);
+    margin: 0;
+}
+.card-text p{
+    color: var(--white);
+    font-size: var(--font-size);
+    padding: 10px 0;
+}
+.card-btn button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 15px 0;
+    font-size: 14px;
+    background: var(--grey);
+    color: var(--white);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.card-btn button:hover{
+    background: var(--green);
+    color: black;
+}
+.attribution{
+    padding-block: 50px;
+    color: white;
+}
+.attribution a{
+    color: white;
+}
