@@ -85,5 +85,5 @@ body{
     color: white;
 }
 .attribution a{
-    color: white;
+    color: var(--green);
 }
