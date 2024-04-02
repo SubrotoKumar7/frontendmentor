@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(217, 54%, 11%);
+}
+.card{
+    margin: auto 30px;
+    width: 300px;
+    padding: 20px;
+    background: hsl(216, 50%, 16%);
+    border-radius: 10px;
+}
+.card-img{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.card-img img{
+    width: 100%;
+    display: block;
+}
+.card-img .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all ease-in-out 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsla(178, 100%, 50%, 0.493);
+}
+.card-img:hover .overlay{
+    opacity: 1;
+}
+.card-img .overlay img{
+    width: 50px;
+}
+.card-text h3{
+    color: hsl(0,0%,100%);
+}
+.card-text h3:hover, .card-bottom b:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.card-text p{
+    color: hsl(215, 51%, 70%);
+}
+.card-info{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.card-info img{
+    vertical-align: middle;
+    padding-right: 3px;
+}
+.card-info .value{
+    color: hsl(178, 100%, 50%);
+}
+.card-info .time{
+    color: hsl(215, 51%, 70%);
+}
+hr{
+    border: 1px solid hsl(215, 32%, 27%);
+    border-radius: 5px;
+}
+.card-bottom{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.card-bottom img{
+    width: 35px;
+    background: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    padding: 1px;
+    margin-right: 20px;
+}
+.card-bottom span{
+    color: hsl(215, 51%, 70%);
+    padding-right: 5px;
+}
+.card-bottom b{
+    font-weight: 600;
+    color: hsl(0,0%,100%);
+}
