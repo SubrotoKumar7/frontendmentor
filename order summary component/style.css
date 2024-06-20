@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+    --PaleBlue: hsl(225, 100%, 94%);
+    --BrightBlue: hsl(245, 75%, 52%);
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --DarkBlue: hsl(223, 47%, 23%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display';
+}
+.container{
+    background-color: var(--PaleBlue);
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.container::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(./images/pattern-background-desktop.svg) no-repeat;
+}
+.card{
+    max-width: 375px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px #ccc;
+    position: absolute;
+    z-index: 22;
+}
+.card .card-head{
+    width: 100%;
+    height: 200px;
+}
+.card .card-head img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+}
+.card .card-body{
+    padding: 20px;
+}
+.card .card-body .body-container{
+    width: 90%;
+    margin: auto;
+}
+.card .card-body h2{
+    margin: 10px 0 20px 0;
+    font-weight: 900;
+    color: var(--DarkBlue);
+}
+.card .card-body h2 + p{
+    padding: 0 20px;
+    color: var(--DarkBlue);
+    line-height: 1.5;
+}
+.card .card-body .plan{
+    background: var(--VeryPaleBlue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.card .card-body .plan .left{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.card .card-body .plan .left b{
+    color: var(--DarkBlue);
+}
+.card .card-body .plan .left p{
+    padding: 5px 0;
+    color: var(--DarkBlue);
+}
+.card .card-body .plan .right a{
+    text-decoration: none;
+}
+.card .card-body .plan .right a:hover{
+    color: var(--DesaturatedBlue);
+}
+.card .card-body button{
+    display: block;
+    padding: 11px 15px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--BrightBlue);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.card .card-body button:hover{
+    background-color: var(--DesaturatedBlue);
+}
+.card .card-body button + a{
+    text-decoration: none;
+    display: block;
+    margin: 20px 0;
+    color: var(--DarkBlue);
+    font-weight: 500;
+    font-weight: bold;
+    font-size: 15px;
+}
+.card .card-body button + a:hover{
+    color: var(--DarkBlue);
+}
